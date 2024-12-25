@@ -61,7 +61,7 @@ public class Main {
                             while (true) {
 
                                 //Document customer selection as they make purchase
-                                System.out.println("Enter the number of the product you'd like to purchase: ");
+                                System.out.println("Enter the ID number of the product you'd like to purchase: ");
                                 int choice2 = scanner.nextInt();
                                 scanner.nextLine();
                                 /*Shows the customer what book they purchase, add the book to the receipt,
@@ -76,7 +76,7 @@ public class Main {
                                 } else {
                                     System.out.println("Invalid choice");
                                 }
-                                System.out.println("Do you want to continue? (Y/N)");
+                                System.out.println("Do you want to purchase another book? (Y/N)");
                                 String choice3 = scanner.nextLine();
 
                                 if (choice3.equalsIgnoreCase("Y")) {
@@ -104,7 +104,7 @@ public class Main {
                     //READ the receipt and add inventory
                     try {
                         //ask customer to specify their receipt name
-                        System.out.println("Enter your name to look up you receipts.");
+                        System.out.println("Enter your name to look up your receipt.");
                         String choice4 = scanner.nextLine();
                         //initialize scanner to read receipt
                         Scanner scanner2 = new Scanner(new File("Receipts" + File.separator + choice4 + ".txt"));
