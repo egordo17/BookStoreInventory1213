@@ -19,7 +19,7 @@ public class Books {
     }
     //toString method to display the book information to the customer
     public String toString(){
-        return "Title: "+ this.title + " Author: "+ this.author + " Price: "+ this.price + " NumCopies: "+ this.NumCopies;
+        return  this.productID + " Title: "+ this.title + " Author: "+ this.author + " Price: "+ this.price + " NumCopies: "+ this.NumCopies;
     }
     //Only the necessary getters and setters
     public int getNumCopies(){
